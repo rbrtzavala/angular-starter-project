@@ -1,18 +1,6 @@
 import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 
-// 1. TS type alias
-// type User = {
-//   avatar: string,
-//   id: string,
-//   name: string
-// }
-
-// 2. TS interface
-interface User {
-  avatar: string,
-  id: string,
-  name: string
-}
+import { type User } from './user.model';
 
 @Component({
   selector: 'app-user',
